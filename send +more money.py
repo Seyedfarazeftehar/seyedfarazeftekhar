@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 26 19:50:45 2020
+
+@author: faraz
+"""
+
+import constraint
+
+def solvethis():
+
+
+    for m in range(9, -1, -1):
+        for o in range(9, -1, -1):
+            for n in range(9, 1, -1):
+                for e in range(9, -1, -1):
+                    for y in range(9, 1, -1):
+                        for r in range(9, 1, -1):
+                            for s in range(9, -1, -1):
+                                for d in range(9, 1, -1):
+
+                                    letters = (m, o, n, e, y, r, s, d)
+
+                                    if o != m and n != m and e != m and y != m and r != m and s != m and d != m:
+                                        if n != o and e != o and y != o and r != o and s != o and d != o:
+                                            if e != n and y != n and r != n and s != n and d != n:
+                                                if y != e and r != e and s != e and d != e:
+                                                    if r != y and s != y and d != y:
+                                                        if s != r and d != r:
+                                                            if d != s:
+
+                                                                send = 1000 * s + 100 * e + 10 * n + d
+                                                                more = 1000 * m + 100 * o + 10 * r + e
+                                                                money = 10000 * m + 1000 * o + 100 * n + 10 * e + y
+
+                                                                if money == send + more:
+                                                                    return send, more, money
+
+
+print(solvethis())
