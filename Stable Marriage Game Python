@@ -2,7 +2,7 @@
 """this code is based on matching module"""
 """all the names are premised"""
 """ this is the easiest code, you can find !!! """
-#this is code is wrote by faraz.eftekhar@gmail.com
+#this is code is written by faraz.eftekhar@gmail.com
 
 import matching
 
@@ -35,4 +35,4 @@ from matching.games import stable_marriage
 game= stable_marriage(men,women)
 print(game)
 
-#this is code is wrote by faraz.eftekhar@gmail.com
+#this is code is written by faraz.eftekhar@gmail.com
