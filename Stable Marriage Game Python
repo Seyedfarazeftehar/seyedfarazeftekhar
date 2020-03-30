@@ -1,0 +1,38 @@
+"this is a program for solving stable marriage game"
+"""this code is based on matching module"""
+"""all the names are premised"""
+""" this is the easiest code, you can find !!! """
+#this is code is wrote by faraz.eftekhar@gmail.com
+
+import matching
+
+
+#men = {faraz, parsa, ali, amir}
+#women = {narges, maryam, sara, diba}
+
+player1 = matching.Player(name= "faraz")
+player2 = matching.Player(name= "ali")
+player3 = matching.Player(name= "parsa")
+player4 = matching.Player(name= "amir")
+men = [player1,player2,player3,player4]
+
+player5 = matching.Player(name= "narges")
+player6 = matching.Player(name= "maryam")
+player7 = matching.Player(name= "sara")
+player8 = matching.Player(name= "diba")
+women= [player5, player6, player7, player8]
+
+player1.set_prefs(players=[player5,player6,player7,player8])
+player2.set_prefs(players=[player6,player7,player8,player5])
+player3.set_prefs(players=[player7,player8,player5,player6])
+player4.set_prefs(players=[player8,player5,player6,player7])
+player5.set_prefs(players=[player1,player2,player3,player4])
+player6.set_prefs(players=[player2,player3,player4,player1])
+player7.set_prefs(players=[player2,player3,player4,player1])
+player8.set_prefs([player4,player1,player2,player3])
+
+from matching.games import stable_marriage
+game= stable_marriage(men,women)
+print(game)
+
+#this is code is wrote by faraz.eftekhar@gmail.com
