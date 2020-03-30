@@ -1,6 +1,6 @@
 #this program returns the Send + More = Money solution
 #in this program, all variable must be different and in the range 0-9
-
+#this code is written by faraz.eftekhar@gmail.com
 import constraint
 
 def solvethis():
@@ -34,3 +34,5 @@ def solvethis():
 
 
 print(solvethis())
+
+#this code is written by faraz.eftekhar@gmail.com
