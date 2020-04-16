@@ -16,8 +16,7 @@ def solve_it(input_data):
         items.append(Item(i-1, int(parts[0]), int(parts[1])))
         vt = []
         wt = []
-        return items
-        """"
+        
         vt.append(items[i][1])
         wt.append(items[i][2])
         
@@ -44,7 +43,6 @@ def solve_it(input_data):
                     output_data = str(max(table[index][weight])) 
                     return output_data
 
-"""
 if __name__ == '__main__':
     import sys
 
